@@ -65,7 +65,10 @@ html, body {
 
 /* Project links */
 hr {
-  border-bottom: 1px;
+  height: 1px;
+  border: none;
+  margin-top: 50px;
+  background-color: #222;
 }
 
 ul {
@@ -86,6 +89,34 @@ ul {
     text-decoration: none;
 }
 
-.links a:hover {
+.links   a:hover,
+.project a:hover {
     color: white;
+}
+
+/* Create basic flexbox for projects */
+
+.flex {
+  gap: 50px;
+  margin-top: 50px;
+  display: flex;
+  font-size: var(--text-size);
+}
+
+.project {
+  flex: 1;
+}
+
+.project a {
+  color: rgba(255,255,255,0.5);
+  font-weight: 200;
+  text-decoration: none;
+}
+
+/* Change flex to column for small devices */
+
+@media (max-width: 800px) {
+  .flex {
+    flex-direction: column;
+  }
 }
