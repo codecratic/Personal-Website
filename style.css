@@ -1,0 +1,86 @@
+/**
+  Built by Josiah LaCelle
+  January 2022
+**/
+
+@import url('https://rsms.me/inter/inter.css');
+
+:root {
+    --bg: #111;
+    --blue: blue;
+    --black: rgba(0,0,0,0.99);
+    --text-color: #fefefe;
+    --text-size: 28px;
+    --link-size: 23px;
+}
+
+::-moz-selection {
+  background: var(--blue);
+}
+
+::selection {
+  background: var(--blue);
+}
+
+p, a {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: Inter UI, sans-serif;
+    background-color: var(--bg);
+    color: var(--text-color);
+    padding: 20px;
+}
+
+/* About Section */
+
+.about {
+    max-width: 800px;
+    font-weight: medium;
+    font-size: var(--text-size);
+}
+
+.about p {
+    margin-bottom: 40px;
+}
+
+.about a {
+    color: white;
+    text-decoration: underline;
+}
+
+.about a:hover {
+    color: #888;
+    text-decoration-color: #888;
+    -webkit-text-decoration-color: #888;
+}
+
+/* Project links */
+hr {
+  border-bottom: 1px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Footer links */
+
+.links {
+    font-size: var(--link-size);
+}
+
+.links a {
+    margin-right: 25px;
+    margin-bottom: 40px;
+    color: rgba(255,255,255,0.5);
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: white;
+}
