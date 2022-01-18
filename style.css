@@ -50,6 +50,7 @@ html, body {
 
 .about p {
     margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .about a {
@@ -63,19 +64,7 @@ html, body {
     -webkit-text-decoration-color: #888;
 }
 
-/* Project links */
-hr {
-  height: 1px;
-  border: none;
-  margin-top: 50px;
-  background-color: #222;
-}
-
-ul {
-  list-style: none;
-}
-
-/* Footer links */
+/* Nav links */
 
 .links {
     font-size: var(--link-size);
@@ -96,9 +85,17 @@ ul {
 
 /* Create basic flexbox for projects */
 
+hr {
+  height: 1px;
+  border: none;
+  margin-top: 50px;
+  background-color: #222;
+}
+
 .flex {
   gap: 50px;
   margin-top: 50px;
+  max-width: 800px;
   display: flex;
   font-size: var(--text-size);
 }
