@@ -3,16 +3,18 @@
   January 2022
 **/
 
+/* Import font and set variables */
 @import url('https://rsms.me/inter/inter.css');
 
 :root {
     --bg: #111;
     --blue: blue;
-    --black: rgba(0,0,0,0.99);
     --text-color: #fefefe;
     --text-size: 28px;
     --link-size: 23px;
 }
+
+/* Change default text selection color */
 
 ::-moz-selection {
   background: var(--blue);
@@ -22,10 +24,14 @@
   background: var(--blue);
 }
 
-p, a {
+/* Reset margins and padding */
+
+p, a, ul {
     margin: 0;
     padding: 0;
 }
+
+/*  */
 
 html, body {
     font-family: Inter UI, sans-serif;
@@ -34,7 +40,7 @@ html, body {
     padding: 20px;
 }
 
-/* About Section */
+/* Header Section */
 
 .about {
     max-width: 800px;
@@ -64,7 +70,6 @@ hr {
 
 ul {
   list-style: none;
-  padding-left: 0;
 }
 
 /* Footer links */
